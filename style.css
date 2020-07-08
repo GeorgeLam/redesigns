@@ -1,0 +1,162 @@
+body {
+}
+
+.navbar-container {
+  /* min-height: 70px; THIS NEEDS TO BE ADDED TO STOP HEIGHT ISSUES WITH BOTTOM CONSOLE*/
+}
+
+.navbar {
+  border-bottom: 1px rgba(114, 114, 114, 0.6) solid;
+  background-color: rgba(24, 45, 65, 0.6);
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Montserrat", sans-serif;
+  font-stretch: normal;
+}
+
+.navbar-light .navbar-brand {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+  color: white;
+  transition: 200ms color;
+}
+
+.navbar-light .navbar-brand:hover{
+  color:rgb(233, 233, 233);
+  transition: 200ms color;
+}
+
+#high {
+  background: url(./img/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+#top-bg {
+  background: rgba(24, 45, 65, 0.6);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}
+
+.row {
+  color: white;
+}
+
+.display-4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-inline .form-group select,
+.form-inline .form-group input,
+.form-inline button {
+  width: 100%;
+}
+
+#grid {
+  overflow: auto;
+}
+
+#grid .row {
+  color: black;
+}
+
+.clear:before,
+.clear:after {
+  content:" ";
+  display:table;
+}
+.clear:after {
+  clear:both;
+}
+
+img {
+  max-width: 100%;
+}
+
+#img2{
+  /* display:none; */
+}
+
+#brand-text,
+#learn {
+  font-size: 1.2em;
+}
+
+#sp-logo{
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+
+#loc-holder, #locations {
+  background-color: rgb(10, 40, 68);
+}
+
+#loc-holder p {
+  color: white;
+}
+
+
+#tiles .display-4{
+    font-family: "Montserrat", sans-serif;  
+}
+
+.card{
+    /* border:none; */
+    border-width: 0px;
+}
+
+.card img{
+    border-radius: .25rem;
+}
+
+.fixed-top.scrolled {
+  background-color: rgb(10, 40, 68);
+  transition: background-color 200ms linear;
+}
+
+#overlay{
+ z-index: 3;
+ position: absolute;
+ background-color: rgba(24, 45, 65, 0.3);
+ height: 100%;
+}
+
+#news .card-body{
+  border: 1px solid lightslategray;
+}
+
+#news .row{
+  color: black;
+}
+
+#news .side-im, #news .side-im img{
+  height: 100px;
+  width: 100px;
+  border-radius: 2%;
+}
+
+#news .fulls{
+  height: 100%;
+}
+
+
+@media (max-width: 768px){
+    #tagline{
+        text-align: center;
+        font-size: 2em;
+        margin: auto;
+    }
+
+    #tiles{
+        padding-bottom: 2em;
+    }
+}
