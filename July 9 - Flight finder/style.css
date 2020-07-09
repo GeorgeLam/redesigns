@@ -18,8 +18,18 @@
         color: #5b5048;
 }
 
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #808080;
+}
+
 .navbar-container nav{
     border-bottom: 1px rgba(203, 170, 135, 0.4) solid;
+}
+
+.fixed-top.scrolled {
+  background-color: #9c6949;
+  transition: background-color 200ms linear;
+  color: #ffeada;
 }
 
 #main-bg{
@@ -43,6 +53,8 @@
 
 #main-heading{
     color: #F8F7F6;
+    cursor: default;
+    user-select: none;
 }
 
 #finder{
@@ -62,4 +74,43 @@
 #search-card button:hover{
     background-color: #5b5048;
     color: white;
+}
+
+#main2{
+    background-color: #fffff0;
+}
+
+#main2 .display-4{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#main2 .card-img-top{
+    height: 350px;
+}
+
+#main2 .section-head{
+    margin-top: 2em;
+}
+
+#main2 #map-img img{
+    height: 550px;
+}
+
+#main2 .map-text{
+    font-size: 1.5em;
+}
+
+#main2 #sp-logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 2%;
+}
+
+#main2 #client-grid{
+    padding: 10px 0;
+    border-bottom: 1px rgba(133, 133, 133, 0.25) solid;
+}
+
+#main2 #client-text{
+    font-size: 2em;
 }

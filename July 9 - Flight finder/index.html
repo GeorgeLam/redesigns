@@ -15,8 +15,10 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500;1,600;1,700&display=swap"
-      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Flight Finder</title>
   </head>
@@ -24,7 +26,6 @@
   <body>
     <div class="container-fluid" id="main-bg">
       <div class="container-fluid h-100" id="main-overlay">
-
         <!-- Navbar markup starts -->
         <div class="navbar-container">
           <nav class="navbar fixed-top navbar-expand-lg navbar-light">
@@ -65,61 +66,186 @@
               </div>
             </div>
           </nav>
-        </div> 
+        </div>
         <!-- Navbar markup ends -->
 
         <!-- Start of main content -->
         <div class="container d-flex flex-column" id="main-content">
-          
           <div class="row w-100" id="tagline">
             <div class="col text-center d-flex flex-column justify-content-end">
               <div class="display-3" id="main-heading">Where will you go?</div>
             </div>
           </div>
-          
+
           <div class="row w-100" id="finder">
             <div class="col text-center d-flex">
-              <div class="col col-md-10 mx-auto d-flex flex-column justify-content-center">
+              <div
+                class="col col-md-10 mx-auto d-flex flex-column justify-content-center"
+              >
                 <div class="card" id="search-card">
-
                   <div class="form-inline">
-
                     <div class="col">
                       <div class="form-group my-4 m-2">
-                        <input type="text" class="form-control typeahead border-primary border-right-0 lookahead" name="query" id="departure"
-                          placeholder="I want to fly from..." data-provide="typeahead" autocomplete="off" spellcheck="false">
+                        <input
+                          type="text"
+                          class="form-control typeahead border-primary border-right-0 lookahead"
+                          name="query"
+                          id="departure"
+                          placeholder="I want to fly from..."
+                          data-provide="typeahead"
+                          autocomplete="off"
+                          spellcheck="false"
+                        />
                       </div>
                     </div>
 
                     <div class="col">
                       <div class="form-group my-4 m-2">
-                        <input type="text" class="form-control typeahead border-primary border-right-0 lookahead" name="query" id="destination"
-                          placeholder="I want to fly to..." data-provide="typeahead" autocomplete="off" spellcheck="false">
+                        <input
+                          type="text"
+                          class="form-control typeahead border-primary border-right-0 lookahead"
+                          name="query"
+                          id="destination"
+                          placeholder="I want to fly to..."
+                          data-provide="typeahead"
+                          autocomplete="off"
+                          spellcheck="false"
+                        />
                       </div>
                     </div>
 
                     <div class="col">
                       <div class="form-group my-4 m-2">
-                        <input type="text" class="form-control" placeholder="When?" />
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="When?"
+                        />
                       </div>
                     </div>
 
                     <div class="col-md-2">
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="submit" class="btn btn-primary">
+                        Submit
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          
-          
+    <div class="container-fluid" id="main2">
+      <div class="container">
 
+      <div class="row">
+        <div class="col">
+          <div class="display-4 pb-4 section-head">This month's highlights</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./min/thumb1.jpg" alt="Barcelona Cathedral" />
+            <div class="card-body">
+              <h5 class="card-title">Barcelona</h5>
+              <p class="card-text">
+                Cathedrals, museums, and as much marble as you can imagine, all found in Spain's cultural centre.
+              </p>
+              <a href="#" class="btn btn-primary">Check prices</a>
+            </div>
+          </div>
         </div>
 
-        
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./min/thumb2.jpg" alt="Barcelona Cathedral" />
+            <div class="card-body">
+              <h5 class="card-title">Moscow</h5>
+              <p class="card-text">
+                Stunning architecture spanning centuries, offering superb views in snow, spring or summer.
+              </p>
+              <a href="#" class="btn btn-primary">Check prices</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./min/thumb3.jpg" alt="Barcelona Cathedral" />
+            <div class="card-body">
+              <h5 class="card-title">San Francisco</h5>
+              <p class="card-text">
+                California's cultural capital, famed for the Golden Gate Bridge, Silicon Valley and its diversity of cuisines.
+              </p>
+              <a href="#" class="btn btn-primary">Check prices</a>
+            </div>
+          </div>
+        </div>
       </div>
+
+
+      <div class="row">
+        <div class="display-4 pb-1 section-head">We'll plan your journey</div>
+      </div>
+
+      <div class="row">
+        <div class="col d-flex align-items-center">
+          <div>
+            <p class="map-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic doloribus quibusdam eaque nihil nisi quidem, excepturi veniam at recusandae cumque nulla ex a error quia impedit maiores facere, dolore in eveniet.
+            </p>
+            <a href="#" class="map-text">Learn more</a>
+          </div>
+        </div>
+        <div class="col py-3 ml-auto d-flex justify-content-end" id="map-img">
+          <img class="rounded ml-auto" src="./min/map.jpg" alt="Map and glasses">
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="display-4 section-head pb-3" id="client-text">Our clients include</div>
+      </div>
+      <div class="row" id="client-grid">
+        <div class="col col-md-3 col-sm-6 text-center">
+          <img id="sp-logo" src="./min/co1.svg" alt="Spotify" />
+        </div>
+        <div class="col col-md-3 col-sm-6  text-center">
+          <img id="sp-logo" src="./min/co1.svg" alt="Spotify" />
+        </div>
+        <div class="col col-md-3 col-sm-6  text-center">
+          <img id="sp-logo" src="./min/co1.svg" alt="Spotify" />
+        </div>
+        <div class="col col-md-3 col-sm-6 text-center">
+          <img id="sp-logo" src="./min/co1.svg" alt="Spotify" />
+        </div>
+      </div>
+
+      <div class="row" id="client-grid">
+        <div class="col col-md-3 col-sm-6 text-center">
+          <img id="sp-logo" src="./min/co1.svg" alt="Spotify" />
+        </div>
+        <div class="col col-md-3 col-sm-6  text-center">
+          <img id="sp-logo" src="./min/co1.svg" alt="Spotify" />
+        </div>
+        <div class="col col-md-3 col-sm-6  text-center">
+          <img id="sp-logo" src="./min/co1.svg" alt="Spotify" />
+        </div>
+        <div class="col col-md-3 col-sm-6 text-center">
+          <img id="sp-logo" src="./min/co1.svg" alt="Spotify" />
+        </div>
+      </div>
+
+      </div>
+
+      </div>
+     
+
     </div>
 
     <!-- Optional JavaScript -->
