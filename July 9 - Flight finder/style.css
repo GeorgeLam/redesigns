@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-light .navbar-brand{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffeada;
+    font-size: 2em;
+    transition: color 200ms;
+}
+
+.navbar-light .navbar-brand:hover{
+    color: #e2e2e2;
+}
+
+.navbar-light .navbar-nav .nav-link{
+        color: #5b5048;
+}
+
+.navbar-container nav{
+    border-bottom: 1px rgba(203, 170, 135, 0.4) solid;
+}
+
+#main-bg{
+    background: url(./min/head1.jpg);
+    height: 100vh;
+    padding: 0;
+}
+
+#main-overlay{
+    background: rgba(133, 133, 133, 0.25);
+}
+
+#main-content{
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#tagline{
+    height: 40%;
+}
+
+#main-heading{
+    color: #F8F7F6;
+}
+
+#finder{
+    height: 50%;
+}
+
+#search-card{
+    background-color: rgba(133, 133, 133, 0.25);
+}
+
+#search-card button{
+    background-color: #5b5048;
+    border: none;
+    color: #ffeada;
+}
+
+#search-card button:hover{
+    background-color: #5b5048;
+    color: white;
+}
