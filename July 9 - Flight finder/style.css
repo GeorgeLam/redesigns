@@ -5,7 +5,7 @@
 
 .navbar-light .navbar-brand{
     font-family: 'Josefin Sans', sans-serif;
-    color: #ffeada;
+    color: #645a51;
     font-size: 2em;
     transition: color 200ms;
 }
@@ -27,7 +27,7 @@
 }
 
 .fixed-top.scrolled {
-  background-color: #9c6949;
+  background-color: #d6cdc0;
   transition: background-color 200ms linear;
   color: #ffeada;
 }
@@ -65,6 +65,10 @@
     background-color: rgba(133, 133, 133, 0.25);
 }
 
+.form-inline .border-primary{
+    border: none;
+}
+
 #search-card button{
     background-color: #5b5048;
     border: none;
@@ -92,12 +96,27 @@
     margin-top: 2em;
 }
 
+#main2 #sorting{
+    border-right: 1px solid gray;
+}
+
 #main2 #map-img img{
     height: 550px;
 }
 
 #main2 .map-text{
     font-size: 1.5em;
+}
+
+#main2 .btn-sm{
+    color: #fffff0;
+    background-color:#5b5048;
+    border: none;
+}
+
+#main2 .btn:hover{
+    background-color: #645a51;
+    color: #fffff0;
 }
 
 #main2 #sp-logo{
@@ -113,4 +132,33 @@
 
 #main2 #client-text{
     font-size: 2em;
+}
+
+#main2 #app-row{
+    height: 100vh;
+}
+
+#main2 #app-img{
+    height: 600px;
+}
+
+#main2 .app-text{
+    font-size: 1.5em;
+}
+
+#main2 .app-subtext{
+    font-size: 1.1em;
+}
+
+
+#footer-container{
+    background-color: #645a51;
+}
+
+#footer-container #footer a, #footer-container #footer p{
+    color: #cccccc;
+}
+
+#footer-container #footer #george{
+    text-decoration: underline;
 }
