@@ -92,6 +92,10 @@
     height: 350px;
 }
 
+#main2 .highlight{
+    width: 18rem;
+}
+
 #main2 .section-head{
     margin-top: 2em;
 }
@@ -161,4 +165,54 @@
 
 #footer-container #footer #george{
     text-decoration: underline;
+}
+
+
+@media(max-width: 992px){
+    #main2 #map-img img{
+        height: 300px;
+    }
+
+    #main2 #app-img img{
+        height: 400px;
+    }
+}
+
+@media(max-width: 768px){
+    .display-3{
+        font-size: 3.5em;
+    }
+
+    .form-inline{
+        display: flex;
+        justify-content: center;
+    }
+
+    #when-date input{
+        width: 100%;
+        margin: 0;
+    }
+
+    .section-head{
+        font-size: 3em;
+    }
+
+    #highlight-container{
+        display: flex;
+        justify-content: center;    
+    }
+
+    #main2 .highlight{
+        width: 16rem;
+    }
+
+    .map-text{
+        font-size: 1.4em;
+    }
+}
+
+@media(max-width: 576px){
+    .display-4{
+        font-size: 2.7em;
+    }
 }
