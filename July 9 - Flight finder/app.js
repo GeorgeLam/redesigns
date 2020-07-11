@@ -30,6 +30,3 @@ $("#price-select").on("mouseup", valueDetect)
 $("#price-select").val(10);
 valueDetect();
 
-
-
-

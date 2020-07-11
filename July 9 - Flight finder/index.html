@@ -53,17 +53,16 @@
               >
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Destinations</a>
+                    <a class="nav-link" href="#main-content">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Careers</a>
+                    <a class="nav-link" href="#highlight-row">Highlights</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="#app">App</a>
                   </li>
-
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Support</a>
+                    <a class="nav-link" href="#consulting">Consulting</a>
                   </li>
                 </ul>
               </div>
@@ -87,7 +86,7 @@
               >
                 <div class="card" id="search-card">
                   <div class="form-inline">
-                    <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
                       <div class="form-group my-4 m-2">
                         <input
                           type="text"
@@ -102,7 +101,7 @@
                       </div>
                     </div>
 
-                    <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
                       <div class="form-group my-4 m-2">
                         <input
                           type="text"
@@ -117,7 +116,7 @@
                       </div>
                     </div>
 
-                    <div class="col col-12 col-sm-12 col-md-6 col-lg-3" id="when-date">
+                    <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3" id="when-date">
                       <div class="form-group m-2 my-4 m-my-4">
                         <input
                           type="text"
@@ -127,8 +126,8 @@
                       </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3 pb-3 pb-md-0 px-md-auto w-100">
-                      <button type="submit" class="btn btn-primary">
+                    <div class="col-md-6 col-lg-6 col-xl-3 pb-3 pb-md-0 px-md-auto w-100">
+                      <button type="submit" class="btn btn-primary" id="submit-btn">
                         Submit
                       </button>
                     </div>
@@ -143,18 +142,18 @@
     <!-- Top hero section ends -->
 
     <div class="container-fluid" id="main2">
-      <div class="container">
+      
 
 
         <!-- Highlights section starts -->
-      <div class="row">
+      <div class="row" id="highlight-row">
         <div class="col">
-          <div class="display-4 pb-4 section-head">This month's highlights</div>
+          <div class="display-4 pb-4 offset-md-1 section-head" id="highlights">This month's highlights</div>
         </div>
       </div>
 
-      <div class="row d-flex flex-column flex-lg-row align-items-center" id="highlight-container">
-        <div class="col col-12 col-md-auto col-sm-6 py-2 py-sm-2">
+      <div class="row d-flex flex-row flex-nowrap flex-sm-row align-items-center" id="highlight-container">
+        <div class="col col-auto col-md-auto col-sm-6 py-2 py-sm-2">
           <div class="card highlight">
             <img class="card-img-top" src="./min/thumb1.jpg" alt="Barcelona Cathedral" />
             <div class="card-body">
@@ -163,26 +162,45 @@
                 Cathedrals, museums, and as much marble as you can imagine, all found in Spain's cultural centre.
               </p>
               <div class="row">
-                <div class="col-6 col-md-6 col-sm-auto"><a href="#" class="btn btn-sm btn-primary">Check prices</a>
+                <div class="col-6 col-md-6 col-sm-auto" id="check-price"><a href="#" class="btn btn-sm btn-primary">Check prices</a>
                 </div>
                 <div class="col-md-6 col-6 col-sm-auto d-flex justify-content-center align-items-center">
-                  <span>from £35</span>
+                  <span>from £29</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col col-12 col-md-auto col-sm-6 py-2 py-sm-2">
+        <div class="col col-auto col-md-auto col-sm-6 py-2 py-sm-2">
           <div class="card highlight">
-            <img class="card-img-top" src="./min/thumb2.jpg" alt="Barcelona Cathedral" />
+            <img class="card-img-top" src="./min/thumb4.jpg" alt="Norwegian fjord" />
+            <div class="card-body">
+              <h5 class="card-title">Oslo</h5>
+              <p class="card-text">
+                Whether you see the midnight sun or the northern lights, Norway's capital offers fjords, fish and fun.
+              </p>
+              <div class="row">
+                <div class="col-6 col-md-6 col-sm-auto" id="check-price"><a href="#" class="btn btn-sm btn-primary">Check prices</a>
+                </div>
+                <div class="col-6 col-md-6 col-sm-auto d-flex justify-content-center align-items-center">
+                  <span>from £69</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-auto col-md-auto col-sm-6 py-2 py-sm-2">
+          <div class="card highlight">
+            <img class="card-img-top" src="./min/thumb2.jpg" alt="Moscow architecture" />
             <div class="card-body">
               <h5 class="card-title">Moscow</h5>
               <p class="card-text">
                 Stunning architecture spanning centuries, offering superb views in snow, spring or summer.
               </p>
               <div class="row">
-                <div class="col-6 col-md-6 col-sm-auto"><a href="#" class="btn btn-sm btn-primary">Check prices</a>
+                <div class="col-6 col-md-6 col-sm-auto" id="check-price"><a href="#" class="btn btn-sm btn-primary">Check prices</a>
                 </div>
                 <div class="col-6 col-md-6 col-sm-auto d-flex justify-content-center align-items-center">
                   <span>from £89</span>
@@ -192,16 +210,16 @@
           </div>
         </div>
 
-        <div class="col col-12 col-md-auto col-sm-6 py-2 py-sm-2">
+        <div class="col col-auto col-md-auto col-sm-6 py-2 py-sm-2">
           <div class="card highlight">
-            <img class="card-img-top" src="./min/thumb3.jpg" alt="Barcelona Cathedral" />
+            <img class="card-img-top" src="./min/thumb3.jpg" alt="Golden Gate Bridge" />
             <div class="card-body">
               <h5 class="card-title">San Francisco</h5>
               <p class="card-text">
                 California's cultural capital, famed for the Golden Gate Bridge, Silicon Valley and its diversity of cuisines.
               </p>
               <div class="row">
-                <div class="col-6 col-md-6 col-sm-auto"><a href="#" class="btn btn-sm btn-primary">Check prices</a>
+                <div class="col-6 col-md-6 col-sm-auto" id="check-price"><a href="#" class="btn btn-sm btn-primary">Check prices</a>
                 </div>
                 <div class="col-6 col-md-6 col-sm-auto d-flex justify-content-center align-items-center">
                   <span>from £249</span>
@@ -210,12 +228,33 @@
             </div>
           </div>
         </div>
+
+          <div class="col col-auto col-md-auto col-sm-6 py-2 py-sm-2">
+            <div class="card highlight">
+              <img class="card-img-top" src="./min/thumb5.jpg" alt="Houses by a bay" />
+              <div class="card-body">
+                <h5 class="card-title">Sydney</h5>
+                <p class="card-text">
+                  Australia's capital is known for its European architecture, Asian food, and relaxed culture.
+                </p>
+                <div class="row">
+                  <div class="col-6 col-md-6 col-sm-auto" id="check-price"><a href="#" class="btn btn-sm btn-primary">Check prices</a>
+                  </div>
+                  <div class="col-6 col-md-6 col-sm-auto d-flex justify-content-center align-items-center">
+                    <span>from £499</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
       </div>
     <!-- Highlights section ends -->
 
-
+<div class="container">
 <!-- App section starts -->
-<div class="row">
+<div class="row"  id="app">
   <div class="col">
     <div class="display-4 pb-1 section-head">Plan from your palm</div>
   </div>
@@ -255,7 +294,7 @@
 
 
 <!-- Plan journey section starts -->
-      <div class="row">
+      <div class="row" id="consulting">
         <div class="display-4 pb-1 section-head">We'll plan your journey</div>
       </div>
 
@@ -331,19 +370,16 @@
         
         <div class="row py-5 d-flex flex-column align-items-center flex-md-row">
           <div class="col text-center">
-            <a href="#">Home</a>
+            <a href="#main-content">Home</a>
           </div>
           <div class="col text-center">
-            <a href="#">Destinations</a>
+            <a href="#highlight-row">Highlights</a>
           </div> 
           <div class="col text-center">
-            <a href="#">Careers</a>
+            <a href="#app">App</a>
           </div>
           <div class="col text-center">
-            <a href="#">Blog</a>
-          </div>
-          <div class="col text-center">
-            <a href="#">Support</a>
+            <a href="#consulting">Consulting</a>
           </div>
         </div>
 
