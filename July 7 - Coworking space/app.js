@@ -11,6 +11,7 @@ $(function () {
 let options = {rootMargin: "0px"}
 let scr = 0
 
+//let cont = document.querySelector("#img2")
 let cont2 = [...$('.fader')];
 
 let obs = new IntersectionObserver((entry, obs) => {
@@ -23,8 +24,6 @@ let obs = new IntersectionObserver((entry, obs) => {
         }
     })
 }, options)
-
-let cont = document.querySelector("#img2")
 
 cont2.forEach(item => {
     obs.observe(item);

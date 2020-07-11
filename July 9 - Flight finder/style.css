@@ -8,6 +8,8 @@
     width: 8px; 
 }
  
+
+
 /* Track */
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
@@ -135,6 +137,8 @@
     margin-top: 2em;
 }
 
+
+
 #main2 #sorting{
     border-right: 1px solid gray;
 }
@@ -202,12 +206,31 @@
     text-decoration: underline;
 }
 
-@media(max-width: 1200px){
+.fader{
+    opacity: 0;
+    transform: translateY(10vh);
+    visibility: hidden;
+    transition: opacity 0.5s ease-out, transform 1s ease-out;
+    will-change: opacity, visibility;
+}
 
+.faderMain{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-out;
+    will-change: opacity;
+}
+
+.showEl{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+@media(max-width: 1200px){
   .form-inline .form-control{
         width: 100%;
     }
-
 }
 
 @media(max-width: 992px){
@@ -259,8 +282,6 @@
     .display-4{
         font-size: 2.7em;
     }
-
-    
 
     #check-price{
         padding-right: 0px;

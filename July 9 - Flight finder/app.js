@@ -13,6 +13,27 @@ $(document).ready(function(){
     $(".lookahead").typeahead({ source:data });
 });
 
+//Intersection Obs
+let options = { threshold: "0.35" }
+let obs = new IntersectionObserver((entry, obs) => {
+    entry.forEach(ent => {
+            if (ent.isIntersecting == true) {
+            ent.target.classList.add("showEl")
+        }
+    })
+}, options)
+
+let mainContentFade = [...$('.faderMain')];
+let subContentFade = [...$('.fader')];
+
+subContentFade.forEach(item => {
+    obs.observe(item);
+})
+mainContentFade.forEach(item => {
+    obs.observe(item);
+})
+
+
 
 //Price slider
 valueDetect = function () {
@@ -29,4 +50,5 @@ valueDetect = function () {
 $("#price-select").on("mouseup", valueDetect)
 $("#price-select").val(10);
 valueDetect();
+
 
